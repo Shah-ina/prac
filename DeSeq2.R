@@ -1,5 +1,5 @@
 
-setwd("/Users/apple/Downloads/RNA-SEQ-Workshop/DESeq2-final")
+setwd
 getwd()
 install.packages("DESeq2")
 library("DESeq2")
@@ -11,10 +11,13 @@ View(Col_data)
 rownames(Col_data)
 colnames(Count_data)
 all(rownames(Col_data)==colnames(Count_data))
+
 #boxplot(Count_data)
 hist(Count_data[,1]) # Plotting only the first sample (column 1)
+
 #install.packages("DESeq2")
 library(DESeq2) # load the DESeq2 package
+
 #count no of NA values in matrix
 class(Count_data)
 (is.na(Count_data))
